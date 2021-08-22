@@ -1,0 +1,111 @@
+.cabecalho{
+    background-color:#2474b4;
+    display:flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+}
+.cabecalhoNav{
+    display: flex;
+    align-items: center;
+}
+.cabecalhoItem{
+    color:white;
+    font-size:1rem;
+    padding:0 2rem;
+    text-decoration:none;
+}
+.cabecalhoItem:hover{
+    font-weight: 500;
+    
+}
+.botaoCabecalho{
+    background-color:#042253;
+    border : none;
+    color:white;
+    display: flex;
+    font-size:1rem;
+    font-weight:550;
+    height: max-content;
+    text-align:center;
+    padding:8px 20px;
+    transition: 1s ease-in-out;
+}
+.botaoCabecalho:hover{
+    background-color: white;
+    color: #042253;
+    transition: 1s ease-in-out;
+}
+.linksHamburguer{
+    display: none;
+}
+@media screen and (max-width:375px){
+    .botaoCabecalho:hover{
+        transition:0ms;
+        color: white;
+        background-color: #042253;
+    }
+}
+
+@media screen and (max-width:880px){
+    .imgLogo{
+        display: none;
+    }
+    .botaoCabecalho{
+        margin-left:none;
+    }
+    .botaoCabecalho:hover{
+        transition:0ms;
+        color: white;
+        background-color: #042253;
+    }
+    .itemLinkHamburguer{
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        padding-bottom: 2rem;
+        margin-bottom: 3em;
+        border-bottom: 2px solid white;
+    }
+    .linksHamburguer{
+        display: none;
+        background-color: #2474b4;
+        flex-direction: column;
+        visibility: hidden;
+        text-decoration: none;
+        position:relative;
+        width: 600px;
+        height: 660px;
+        
+    }
+
+    .hamburguer{
+        border-top: 2px solid;
+        color: white;
+        cursor: pointer;
+        display: block;
+        margin-top: .7rem;
+        width: 20px;
+       
+    }
+    .hamburguer::before ,.hamburguer::after{
+        display: block;
+        content: '';
+        border-top: 2px solid;
+        width: 20px;
+        margin-top:5px;
+        
+    }
+    .active{
+        display: flex;
+        visibility: visible;
+        justify-content: space-evenly;
+        
+    }
+    .cabecalhoLista{
+        display: none;
+    }
+    .hamburguer .active{
+        transform: rotate(135deg);
+    }
+}

@@ -1,0 +1,105 @@
+.banner{
+    background-image:url(../img/banner.png);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    background-color: rgb(41,39,34);
+    background:linear-gradient(360deg, rgba(0,0,0,1)1%, rgba(0,0,0,0.4)100%);
+    height: 100%;
+    width: 100%;
+
+}
+.bannerConteudo{
+    padding-top:6rem;
+    padding-left: 4rem;
+}
+.bannerTitulo{
+    color: white;
+    font-size: 5rem;
+    font-weight: 500;
+    align-self: flex-start;
+    padding-bottom:1.5rem;
+}
+.bannerP{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom:4rem;
+}
+.bannerBotao{
+    background-color:#04a3ec;
+    border:none;
+    color: white;
+    font-size:1.3rem;
+    font-weight:550;
+    padding:15px 60px;
+    align-self: baseline;
+}
+.irPara{
+    width:40px;
+    cursor:pointer;
+}
+.bannerBaixo{
+    display:flex;
+    justify-content: space-between;
+    padding: 11rem 5rem 0 5rem;
+   
+}
+
+@media screen and (min-width:375px) and (max-width:880px){
+    .bannerContainer{
+        align-items: center;
+    }
+    .bannerConteudo{
+        display: flex;
+        padding-left: 6%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bannerTitulo{
+        font-size: 3rem;
+    }
+    .bannerP{
+        padding-left:1.5rem;
+        font-size: 1.5rem;
+    }
+    .irPara{
+       width: 0;
+    }
+    .bannerBaixo{
+        padding-top:4rem;
+    }
+}
+@media screen and (max-width:880px){
+    .bannerConteudo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 6rem;
+    }
+    .irPara{
+        display: none;
+    }
+    .bannerP{
+        padding-left: 2rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width:1024px){
+
+    .bannerP{
+        padding-left: 0;
+    }
+    .irPara{
+        display: flex;
+    }
+}

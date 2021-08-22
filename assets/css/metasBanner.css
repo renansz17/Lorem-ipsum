@@ -1,0 +1,24 @@
+.metasBanner{
+    background:url(../img/img-reuniao.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-bottom:5rem;
+}
+.metasBannerConteudo{
+    background:linear-gradient(180deg, rgba(0,0,0,0.4)50%, rgba(0,0,0,0.4)50%);
+    display: flex;
+    align-items: center;
+    height:40vh;
+}
+.metasBannerTitulo{
+    color: aliceblue;
+    font-size: 2.5rem;
+    text-align: center; 
+}
+@media screen and (max-width:375px){
+    .metasBannerTitulo{
+        font-size: 1.8rem;
+    }
+}

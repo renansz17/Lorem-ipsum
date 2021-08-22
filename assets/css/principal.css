@@ -1,0 +1,121 @@
+.principalInicial{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.principalInicialP{
+    color: #7a7a7a;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-bottom:2rem;
+}
+.principalNegrito{
+    color: tomato;
+}
+.principalConteudo{
+    text-align: center;
+}
+.principalTitulo{
+    color: #2474b4;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom:2rem;
+}
+.principalSubtitulo{
+    color: #7a7a7a;
+    margin-top: 1rem;
+    font-size:1.3rem;
+}
+.objetos{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    width: 100%;
+
+}
+.objetosEsquerda{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.objetosDireita{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.infoCard{
+    color: white;
+
+    display: flex;
+    align-items: center;
+
+    width:100%;
+    height: 122px;
+}
+.cardTexto{
+    align-self: flex-start;
+    padding-left:0.5rem;
+}
+.cardTitulo{
+    font-size:1.5rem;
+    font-weight: 500;
+    margin-bottom:0.2rem;
+    margin-top:1rem;
+}
+.cardDescricao{
+    margin-top:1rem;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.cardImagem{
+    padding:0 1rem;
+}
+
+@media screen and (max-width:375px){
+    .principalInicialP{
+        font-size: 1.5rem;
+    }
+    .principalNegrito{
+        color: #7a7a7a;
+    }
+    .principalTitulo{
+        font-size: 2.5rem;
+    }
+    .principalSubtitulo{
+        font-size: 1.5rem;
+    }
+    .infoCard{
+        width:100%;
+        height: 100%;
+    }
+    .cardTexto{
+        padding-right: 0.5rem;
+    }
+    .cardDescricao{
+        font-size: 0.9rem;
+        margin-top:0.5rem;
+        padding-bottom:0.6rem;
+        text-align: start;
+    }
+
+}
+@media screen and (max-width:880px){
+    .principalNegrito{
+        color: #7a7a7a;
+    }
+    .principalInicialP{
+        font-size:1.8rem;
+    }
+    .principalSubtitulo{
+        font-size: 1.8rem;
+    }
+    .objetos{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1024px){
+    
+}

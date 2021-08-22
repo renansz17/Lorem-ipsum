@@ -1,0 +1,130 @@
+.objetivos{
+    width: 100%;
+}
+.objetivosProp{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+.cardObjetivo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 4rem 4rem 4rem;
+    
+}
+.objetivosCardImg{
+    background-color:#7cbc04 ;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: 30px;
+    
+}
+.objetivosCardHr{
+    background-color: #dcdcdc;
+    border: none;
+    margin-top: 1rem;
+    padding:2px;
+    width: 5%;
+}
+.objetivosTitulo{
+    color: #2474b4;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+.objetivosCardSubT{
+    color: #7cbc04;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.objetivosCardP{
+    color: #747272;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+.objetivosCardBtn{
+    border:2px solid;
+    background-color:transparent;
+    color: #7cbc04;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.objetivoCardContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%
+}
+.shield{
+    color: #0093BE;
+}
+.notebook{
+    color:#fcbc04;
+}
+
+@media screen and (max-width:375px){
+    .objetivosConteudo{
+        width:100%
+    }
+    .objetivosTitulo{
+        font-size: 2.5rem;
+    }
+    .cardObjetivo{
+        width:100%;
+    }
+    .objetivosCardImg{
+        margin-bottom: 4rem;
+        padding: 10px;
+    }
+    .objetivosCardBtn{
+        margin-bottom: 4rem;
+    }
+}
+@media screen and (max-width:880px){
+   .objetivoCardContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+   }
+   .objetivosConteudo{
+       margin-bottom:3rem;
+   }
+   .objetivosProp{
+       flex-direction: column;
+       gap:0;
+       align-items: center;
+   }
+   .cardObjetivo{
+       flex-direction: row-reverse;
+       margin:2rem 2rem 2rem 2rem
+   }
+   .objetivosCardSubT{
+       margin-bottom: 1rem;
+   }
+   .objetivosCardP{
+       margin-bottom:1rem;
+       text-align: start;
+   }
+   .objetivosCardBtn{
+       margin-top: 1rem;
+   }
+   .objetivosCardImg{
+       margin-left: 1.2rem;
+   }
+   .objetivosCardHr{
+       order:7;
+       margin-top: 6rem;
+       width: 5%;
+       padding:2px;
+       background-color: #a09a9a;
+       border:none;
+       align-self: center;
+   }
+}
+@media screen and (max-width:1024px){
+
+}
